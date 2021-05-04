@@ -13,16 +13,16 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/join">
+        <Route path="/join" exact>
           <Join />
         </Route>
-        <Route path="/login">
+        <Route path="/login" exact>
           <Login />
         </Route>
-        <Route path="/chat">
+        <Route path="/chat" exact>
           <Chat />
         </Route>
-        <Route path="/">
+        <Route path="/" exact>
           <Main />
         </Route>
       </Switch>
